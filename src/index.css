@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@plugin "daisyui";
+
+@layer components {
+  .glass-card-base {
+    background-color: rgba(41, 47, 54, 0.8) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+
+  .social-icon-btn {
+    @apply w-12 h-12 flex items-center justify-center rounded-full border transition-all duration-300;
+    color: #A41F13;
+    border-color: #A41F13;
+    box-shadow: 0 0 5px #A41F13;
+  }
+
+  .social-icon-btn:hover {
+    background-color: #A41F13;
+    color: #FAF5F1;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #A41F13;
+  }
+
+  .section-title {
+    @apply text-5xl md:text-6xl font-extrabold mb-16 relative inline-block w-full text-center tracking-tight;
+    color: #FAF5F1;
+  }
+
+  .section-title span {
+    color: #A41F13;
+  }
+
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #A41F13;
+    border-radius: 2px;
+  }
+}
