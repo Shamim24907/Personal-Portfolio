@@ -18,11 +18,11 @@ export default function Contact() {
           <div className="space-y-4">
             <div className="flex items-center space-x-4">
               <Mail size={24} className="text-[#A41F13]" />
-              <p className="text-[#FAF5F1] text-lg">shamim.dev@example.com</p>
+              <p className="text-[#FAF5F1] text-lg">shamim24907@gmail.com</p>
             </div>
             <div className="flex items-center space-x-4">
               <Phone size={24} className="text-[#A41F13]" />
-              <p className="text-[#FAF5F1] text-lg">+880 1234 567 890</p>
+              <p className="text-[#FAF5F1] text-lg">+8801880076697</p>
             </div>
             <div className="flex items-center space-x-4">
               <MapPin size={24} className="text-[#A41F13]" />
